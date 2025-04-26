@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Ambiental</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #2d6a4f;
+            color: white;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2d6a4f;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px 18px;
+            background-color: #2d6a4f;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #2d6a4f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#importance">Importancia</a></li>
+            <li><a href="#actions">Acciones</a></li>
+            <li><a href="#questions">Preguntas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Educación Ambiental</h1>
+        <p>Integrantes: López Martínez Jacobo</p>
+    </header>
+
+    <section id="intro">
+        <h2>¿Qué es la educación ambiental?</h2>
+        <p>La educación ambiental es un proceso permanente que permite a las personas adquirir conciencia del medio que las rodea, así como de los problemas que lo afectan. Busca desarrollar valores, conocimientos y habilidades que conduzcan a una participación activa y responsable en la protección del entorno.</p>
+        <p>También promueve el pensamiento crítico y la toma de decisiones que favorezcan el desarrollo sostenible, el respeto por la biodiversidad y la justicia ambiental.</p>
+    </section>
+
+    <section id="importance">
+        <h2>Importancia de la educación ambiental</h2>
+        <ul>
+            <li>Conciencia sobre el cambio climático.</li>
+            <li>Fomento de prácticas sostenibles en la vida diaria.</li>
+            <li>Protección de la biodiversidad y ecosistemas.</li>
+            <li>Reducción de la contaminación ambiental.</li>
+            <li>Promueve la equidad y el respeto entre generaciones presentes y futuras.</li>
+        </ul>
+    </section>
+
+    <section id="actions">
+        <h2>Acciones que podemos tomar</h2>
+        <ul>
+            <li>Reducir el consumo de plástico.</li>
+            <li>Ahorrar agua y energía en casa y en la escuela.</li>
+            <li>Participar en programas de reciclaje y reutilización.</li>
+            <li>Informarse y educar a otras personas sobre problemas ambientales.</li>
+            <li>Plantar árboles y cuidar los espacios verdes.</li>
+        </ul>
+    </section>
+
+    <section id="questions">
+        <h2>Preguntas para reflexionar</h2>
+        <ul>
+            <li>¿Cómo afecta mi estilo de vida al medio ambiente?</li>
+            <li>¿Qué cambios puedo hacer para vivir de forma más sostenible?</li>
+            <li>¿Qué recursos naturales usamos todos los días?</li>
+            <li>¿Qué pasaría si no actuamos frente al cambio climático?</li>
+            <li>¿Qué puedo hacer hoy para ayudar a mi comunidad a cuidar el medio ambiente?</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Educación Ambiental. Todos los derechos reservados. <a href="https://www.facebook.com">Facebook</a> | <a href="https://www.instagram.com">Instagram</a></p>
+    </footer>
+
+<section id="faq">
+    <h2>Preguntas y respuestas sobre educación ambiental</h2>
+
+    <h3>1. ¿Qué es la educación ambiental?</h3>
+    <p>La educación ambiental es un proceso de aprendizaje que busca desarrollar una conciencia sobre los problemas medioambientales y promover cambios de comportamiento que favorezcan la protección del entorno natural. Se enfoca en la comprensión de los impactos humanos sobre el medio ambiente y fomenta la participación activa en la solución de estos problemas.</p>
+
+    <h3>2. ¿Por qué es importante la educación ambiental?</h3>
+    <p>Es fundamental porque nos ayuda a tomar decisiones informadas sobre el uso de los recursos naturales, reduce el impacto de nuestras actividades en el planeta, y fomenta la conservación de la biodiversidad. Además, promueve un futuro más sostenible y equitativo para todas las especies, incluidas las humanas.</p>
+
+    <h3>3. ¿Cuáles son algunos de los problemas ambientales más importantes que debemos abordar?</h3>
+    <p>Algunos de los problemas ambientales más críticos incluyen el cambio climático, la deforestación, la contaminación del aire y agua, la pérdida de biodiversidad, y la escasez de recursos naturales. Estos problemas requieren acción inmediata para evitar un daño irreversible al planeta.</p>
+
+    <h3>4. ¿Cómo podemos contribuir a la protección del medio ambiente desde nuestras casas?</h3>
+    <p>Podemos empezar por reducir el consumo de agua y energía, utilizar productos reutilizables en lugar de desechables, reducir, reutilizar y reciclar, optar por el uso de transporte público o bicicletas, y plantar árboles. Estos pequeños cambios pueden tener un gran impacto a largo plazo.</p>
+
+    <h3>5. ¿Qué es el cambio climático y cómo afecta al planeta?</h3>
+    <p>El cambio climático se refiere al aumento de la temperatura global debido al incremento de gases de efecto invernadero, como el dióxido de carbono, que atrapan el calor en la atmósfera. Esto provoca fenómenos extremos como olas de calor, tormentas intensas, derretimiento de glaciares y aumento del nivel del mar, lo que afecta a los ecosistemas, la agricultura y la vida humana.</p>
+
+    <h3>6. ¿Qué papel juegan las energías renovables en la educación ambiental?</h3>
+    <p>Las energías renovables, como la solar, eólica e hidroeléctrica, juegan un papel crucial en la lucha contra el cambio climático. Promover su uso a través de la educación ambiental es vital para reducir la dependencia de los combustibles fósiles y disminuir las emisiones de gases de efecto invernadero.</p>
+
+    <h3>7. ¿Qué es la biodiversidad y por qué debemos protegerla?</h3>
+    <p>La biodiversidad es la variedad de vida en la Tierra, incluyendo todas las especies de plantas, animales y microorganismos. Es crucial para mantener los ecosistemas saludables, ya que cada especie tiene un papel en el equilibrio ecológico. La protección de la biodiversidad asegura que los ecosistemas continúen funcionando correctamente, lo que es vital para la vida humana.</p>
+
+    <h3>8. ¿Cómo podemos educar a otras personas sobre la importancia de cuidar el medio ambiente?</h3>
+    <p>Podemos educar a otros compartiendo información sobre los problemas ambientales y las soluciones posibles, participando en programas de sensibilización y haciendo campañas en nuestras comunidades. También podemos ser ejemplos de buenos hábitos sostenibles para inspirar a los demás.</p>
+
+    <h3>9. ¿Qué son los ODS (Objetivos de Desarrollo Sostenible) y cómo están relacionados con la educación ambiental?</h3>
+    <p>Los ODS son un conjunto de 17 metas globales adoptadas por la ONU para erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos. Están directamente relacionados con la educación ambiental porque varios de estos objetivos, como el ODS 13 (Acción por el clima) y el ODS 14 (Vida submarina), buscan proteger el medio ambiente y promover un desarrollo sostenible.</p>
+
+    <h3>10. ¿Qué acciones concretas puedes tomar hoy para contribuir a un futuro más sostenible?</h3>
+    <p>Puedes comenzar por hacer cambios simples, como usar menos plástico, reducir el consumo de agua y energía, elegir productos locales y sostenibles, y participar en iniciativas de reciclaje. También puedes involucrarte en actividades comunitarias para crear conciencia ambiental.</p>
+</section>
+
+</body>
+</html>
